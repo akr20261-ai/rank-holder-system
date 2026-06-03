@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Rank-Holder Engine (RHE)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; -webkit-tap-highlight-color: transparent; }
+        .mobile-scroll { -webkit-overflow-scrolling: touch; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100 min-h-screen pb-24 flex flex-col select-none">
+
+    <div class="sticky top-0 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-900 z-40 px-4 py-3 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+            <div class="bg-indigo-600 p-2 rounded-lg"><i class="fa-solid fa-brain text-sm text-white"></i></div>
+            <div>
+                <h1 class="font-bold text-sm leading-none">RHE Engine</h1>
+                <span id="header-subtitle" class="text-[10px] text-zinc-500 uppercase tracking-wider font-semibold">Core Matrix</span>
+            </div>
+        </div>
+        <div class="flex gap-2">
+            <span class="text-[11px] font-bold text-amber-500 bg-amber-500/10 border border-amber-500/20 px-2 py-1 rounded-md">6h Cap</span>
+            <span class="text-[11px] font-bold text-emerald-500 bg-emerald-500/10 border border-emerald-500/20 px-2 py-1 rounded-md">Anti-Burnout</span>
+        </div>
+    </div>
+
+    <main class="flex-1 p-4 mobile-scroll max-w-xl mx-auto w-full overflow-y-auto">
+        <div id="tab-dashboard" class="tab-content space-y-4">
+            <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4">
+                <h2 class="text-base font-bold text-zinc-100">Deep Syllabus Decoder</h2>
+                <p class="text-xs text-zinc-400 mt-0.5">Ruthlessly target high-scoring asset clusters.</p>
+            </div>
+            <div class="grid grid-cols-1 gap-3">
+                <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="px-2 py-0.5 text-[10px] font-bold rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">QUADRANT I</span>
+                        <i class="fa-solid fa-bullseye text-emerald-500 text-sm"></i>
+                    </div>
+                    <h3 class="text-sm font-bold text-zinc-200">Scoring Clusters</h3>
+                    <p class="text-[11px] text-zinc-400 mb-3">High Yield • Easy-Medium Depth. Attack first.</p>
+                    <div class="bg-zinc-950 p-2.5 rounded-lg border border-zinc-850 flex justify-between items-center text-xs">
+                        <span class="text-zinc-300">Core Mechanisms & Frameworks</span>
+                        <span class="text-[10px] font-bold text-emerald-400">~35% Marks</span>
+                    </div>
+                </div>
+                <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="px-2 py-0.5 text-[10px] font-bold rounded bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">QUADRANT II</span>
+                        <i class="fa-solid fa-dumbbell text-indigo-500 text-sm"></i>
+                    </div>
+                    <h3 class="text-sm font-bold text-zinc-200">The Grunt Zone</h3>
+                    <p class="text-[11px] text-zinc-400 mb-3">High Yield • Heavy Complexity. Needs Deep Work.</p>
+                    <div class="bg-zinc-950 p-2.5 rounded-lg border border-zinc-850 text-xs">Multi-Concept Heavy Proofs</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-scheduler" class="tab-content hidden space-y-4">
+            <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4">
+                <h2 class="text-base font-bold">The 2-2-2 Execution Rhythm</h2>
+                <p class="text-xs text-zinc-400">Daily timelines built for active recall pacing.</p>
+            </div>
+            <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4">
+                <div class="flex justify-between items-center border-b border-zinc-850 pb-2 mb-3">
+                    <span class="font-bold text-sm text-indigo-400">Protocol Structure</span>
+                </div>
+                <div class="space-y-2 text-xs">
+                    <div class="flex gap-2"><span class="text-violet-400 font-bold bg-violet-500/10 px-1 rounded">DEEP</span> <p class="text-zinc-300">Core Theory Study (2h)</p></div>
+                    <div class="flex gap-2"><span class="text-emerald-400 font-bold bg-emerald-500/10 px-1 rounded">APP</span> <p class="text-zinc-300">PYQ Question Mining (2h)</p></div>
+                    <div class="flex gap-2"><span class="text-amber-400 font-bold bg-amber-500/10 px-1 rounded">CONSOL</span> <p class="text-zinc-300">Atomic Note Extraction (2h)</p></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-notes" class="tab-content hidden space-y-4">
+            <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4">
+                <h2 class="text-base font-bold">Atomic Processing Lab</h2>
+                <p class="text-xs text-zinc-400">Extract core pillars and isolate examiner traps.</p>
+            </div>
+            <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4 space-y-3">
+                <textarea id="raw-input" rows="4" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg p-3 text-base font-mono text-zinc-300 focus:outline-none focus:border-zinc-700">The Krebs cycle occurs inside the mitochondrial matrix. Acetyl-CoA merges with oxaloacetate forming citrate. Key examiner trap: The cycle does not directly ingest oxygen, but freezes entirely without it due to upstream electron transport chain pileups.</textarea>
+                <button onclick="simulateGeneration()" class="w-full bg-indigo-600 active:bg-indigo-700 text-white font-semibold py-3 rounded-xl flex items-center justify-center gap-2 text-sm">
+                    <i class="fa-solid fa-microchip"></i> Fire Atomic Processor
+                </button>
+                <div id="note-output" class="hidden bg-zinc-950 border border-zinc-850 rounded-lg p-3 text-xs space-y-2">
+                    <p class="text-emerald-400 font-bold">✓ Core Anchor Extracted</p>
+                    <p class="text-zinc-300">Mitochondrial Matrix conversion framework initialized.</p>
+                    <p class="text-rose-400 font-bold">⚠️ Examiner Trap Isolated</p>
+                    <p class="text-zinc-300">Oxygen is not directly consumed, but required indirectly to prevent system freeze.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-prompts" class="tab-content hidden space-y-4">
+            <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4">
+                <h2 class="text-base font-bold">AI Prompt Vault</h2>
+                <p class="text-xs text-zinc-400">Pre-built frameworks ready for AI extraction.</p>
+            </div>
+            <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4 space-y-2">
+                <div class="flex justify-between items-center text-xs">
+                    <span class="text-emerald-400 font-bold">Syllabus Decoder Prompt</span>
+                    <button onclick="copyPrompt('prompt-1', this)" class="bg-zinc-800 px-2 py-1 rounded">Copy</button>
+                </div>
+                <p id="prompt-1" class="text-[11px] font-mono text-zinc-400 bg-zinc-950 p-2 rounded border border-zinc-850">Act as an elite competitive exam strategist. Analyze the attached chapters and categorize them into high-yield scoring clusters and heavy complex grunt zones.</p>
+            </div>
+        </div>
+    </main>
+
+    <nav class="fixed bottom-0 left-0 right-0 bg-zinc-900/90 backdrop-blur-lg border-t border-zinc-800 flex justify-around items-center h-16 z-50">
+        <button onclick="switchTab('dashboard')" id="btn-dashboard" class="nav-btn flex flex-col items-center justify-center flex-1 text-indigo-500">
+            <i class="fa-solid fa-chart-pie text-lg mb-0.5"></i><span class="text-[10px] font-semibold">Matrix</span>
+        </button>
+        <button onclick="switchTab('scheduler')" id="btn-scheduler" class="nav-btn flex flex-col items-center justify-center flex-1 text-zinc-500">
+            <i class="fa-solid fa-calendar-day text-lg mb-0.5"></i><span class="text-[10px] font-semibold">Schedule</span>
+        </button>
+        <button onclick="switchTab('notes')" id="btn-notes" class="nav-btn flex flex-col items-center justify-center flex-1 text-zinc-500">
+            <i class="fa-solid fa-wand-magic-sparkles text-lg mb-0.5"></i><span class="text-[10px] font-semibold">Processor</span>
+        </button>
+        <button onclick="switchTab('prompts')" id="btn-prompts" class="nav-btn flex flex-col items-center justify-center flex-1 text-zinc-500">
+            <i class="fa-solid fa-terminal text-lg mb-0.5"></i><span class="text-[10px] font-semibold">Vault</span>
+        </button>
+    </nav>
+
+    <script>
+        function triggerHaptic() { if (navigator.vibrate) navigator.vibrate(12); }
+        function switchTab(tabId) {
+            triggerHaptic();
+            document.querySelectorAll('.tab-content').forEach(view => view.classList.add('hidden'));
+            document.getElementById('tab-' + tabId).classList.remove('hidden');
+            document.querySelectorAll('.nav-btn').forEach(btn => { btn.classList.remove('text-indigo-500'); btn.classList.add('text-zinc-500'); });
+            document.getElementById('btn-' + tabId).classList.add('text-indigo-500');
+            document.getElementById('btn-' + tabId).classList.remove('text-zinc-500');
+            const subtitle = document.getElementById('header-subtitle');
+            if (tabId === 'dashboard') subtitle.innerText = "Core Yield Matrix";
+            if (tabId === 'scheduler') subtitle.innerText = "6-Hour Timeline";
+            if (tabId === 'notes') subtitle.innerText = "Atomic Summary Lab";
+            if (tabId === 'prompts') subtitle.innerText = "AI Prompt Vault";
+        }
+        function simulateGeneration() {
+            triggerHaptic();
+            document.getElementById('note-output').classList.remove('hidden');
+        }
+        function copyPrompt(id, btn) {
+            triggerHaptic();
+            navigator.clipboard.writeText(document.getElementById(id).innerText).then(() => {
+                btn.innerText = "Copied!";
+                setTimeout(() => btn.innerText = "Copy", 1500);
+            });
+        }
+    </script>
+</body>
+</html>
